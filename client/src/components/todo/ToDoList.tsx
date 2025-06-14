@@ -19,7 +19,7 @@ export default function TodoList() {
     setFilter(newFilter);
   };
   return (
-    <div className="py-4 ">
+    <div className="py-4">
       <div className="flex gap-4 container mb-4">
         {(["all", "upcoming", "done"] as FilterType[]).map((f) => (
           <Button
@@ -33,7 +33,7 @@ export default function TodoList() {
         ))}
       </div>
 
-      <ScrollArea className="h-[500px]">
+      <ScrollArea className="h-[calc(100vh-200px)]">
         {todos.map((todo) => (
           <div
             key={todo._id}
@@ -65,7 +65,8 @@ export default function TodoList() {
                     variant="ghost"
                     size="icon"
                     onClick={() => toggleMutation.mutate(todo)}
-                    title={todo.isDone ? "Mark as Upcoming" : "Mark as Done"}
+                    title={todo.isDone ? "Revert" : "Done"}
+                    className="hover:cursor-pointer"
                   >
                     {todo.isDone ? (
                       <Undo2 className="w-4 h-4 text-green-600" />
@@ -78,6 +79,7 @@ export default function TodoList() {
                     size="icon"
                     onClick={() => deleteMutation.mutate(todo._id)}
                     title="Delete"
+                    className="hover:cursor-pointer"
                   >
                     <Trash2 className="w-4 h-4 text-red-500" />
                   </Button>
