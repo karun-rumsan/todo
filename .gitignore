@@ -1,0 +1,53 @@
+# === Common ===
+# OS-specific
+.DS_Store
+Thumbs.db
+
+.qodo
+
+# Logs
+logs
+client/*.log
+client/npm-debug.log*
+
+
+
+client/dist
+client/dist-ssr
+client/*.local
+
+# Editor directories and files
+client/.vscode/*
+client/!.vscode/extensions.json
+client/.idea
+client/.DS_Store
+*.suo
+client/*.ntvs*
+client/*.njsproj
+client/*.sln
+client/*.sw?
+
+# Environment files (for both backend and frontend)
+.env
+.env.*
+server/.env
+client/.env
+server/.qodo
+client/.qodo
+
+
+# === Node.js ===
+# Node modules
+node_modules/
+server/node_modules/
+client/node_modules/
+
+
+
+# Cache and temporary files
+.cache/
+server/.cache/
+client/.cache/
+
+
+
