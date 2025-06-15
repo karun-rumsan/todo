@@ -46,7 +46,7 @@ npm install
 ```
 ### Configure environment variables
 
-Create .env files in backend and frontend folders (if applicable)
+Create .env files in backend and frontend folders.
 
 ### Run backend server
 ```
