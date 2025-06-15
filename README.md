@@ -48,6 +48,17 @@ npm install
 
 Create .env files in backend and frontend folders.
 
+Frontend
+```
+VITE_API_URL= 
+```
+Backend
+```
+PORT=
+MONGO_URI=
+MONGO_INITDB_ROOT_USERNAME=
+MONGO_INITDB_ROOT_PASSWORD=
+```
 ### Run backend server
 ```
 npm run dev
