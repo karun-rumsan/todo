@@ -36,22 +36,23 @@ cd todo
 
 ### Install dependencies for backend and frontend:
 
+```bash
 cd server
 npm install
-
-cd /client
+```
+```bash
+cd client
 npm install
-
+```
 ### Configure environment variables
 
 Create .env files in backend and frontend folders (if applicable)
 
 ### Run backend server
-
-cd server
+```
 npm run dev
-
+```
 ### Run frontend app
-
-cd client
+```
 npm run dev
+```
